@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice Task</title>
+        <meta charset="UTF-8">
+        <style>
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            .button1 {
+                background-color: dodgerblue; 
+                color: white; 
+                border: 2px solid #ffffff;
+                border-top-left-radius:15px;
+                border-bottom-right-radius:15px;
+            }
+
+            .button1:hover {
+                background: transparent;
+                border-color: black;
+                color: black;
+                border-top-right-radius:15px;
+                border-bottom-left-radius:15px;
+                border-top-left-radius:0px;
+                border-bottom-right-radius:0px;
+            }
+            * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            margin-left: 40%;
+            
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+
+   </style>
+    </head>
+
+    <body>
+      <img style= "height: 200px"src="img1.jpeg" alt="">
+        <h1 style = "text-transform: uppercase">Education</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quae adipisci numquam alias fuga quis iste sequi dolores ipsa non, facilis repellat doloremque libero corrupti omnis ex deserunt quas iure?</p>
+        <h1 style = "text-transform: capitalize">Dislikes</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quis reiciendis minima eveniet, nostrum non voluptatibus ducimus? Quod nemo facilis soluta doloribus blanditiis. Porro alias architecto quasi itaque, quae sunt.</p>
+        <h1 style = "text-transform: lowercase">Hobbies</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sint, modi dolorum magni perspiciatis omnis voluptate aliquid. Minus ipsam repellendus pariatur ea natus non, facilis impedit iste a ex reiciendis.</p>
+
+        <button class = "button button1">Click Me</button>
+
+        <div class="row">
+            <div class="column">
+              <img src="img1.jpeg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img1.jpeg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img1.jpeg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+
+        <a href="">Education</a>
+        <a href="">Hobbies</a>
+        <a href="">Experience</a>
+    </body>
+
+</html>
