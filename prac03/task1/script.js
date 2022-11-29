@@ -17,6 +17,6 @@ $(document).ready(function () {
   });
 
   $(".btnBColor").click(function () {
-    $(".heading4 p").css({ "background-color": "pink" });
+    $("body").css({ "background-color": "pink" });
   });
 });
