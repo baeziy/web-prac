@@ -1,0 +1,56 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}
+header,
+footer {
+  background-color: aqua;
+  border: 2px solid black;
+  text-align: center;
+  padding: 10px;
+}
+.mainpage {
+  display: flex;
+  height: 600px;
+}
+
+.sidebar1,
+.sidebar2,
+main {
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar1 {
+  margin-left: 1px;
+}
+.sidebar1,
+.sidebar2 {
+  background-color: pink;
+  flex: 1;
+}
+
+main {
+  background-color: bisque;
+  flex: 3;
+}
+
+@media (width < 800px) {
+  .mainpage {
+    flex-direction: column;
+  }
+  main {
+    order: 1;
+  }
+  .sidebar1,
+  .sidebar2 {
+    order: 2;
+  }
+}
